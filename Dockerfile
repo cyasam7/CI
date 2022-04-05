@@ -1,7 +1,7 @@
 FROM node:14.4.0-alpine
 
 ENV NODE_ENV=production
-ENV PORT=4000
+ENV PORT=4001
 ENV CORS=*
 ENV MONGO_USER=cyasam7
 ENV MONGO_PASSWORD=Cyasam86&
@@ -19,7 +19,7 @@ RUN npm install --silent
 
 COPY . .
 
-EXPOSE 4000
+EXPOSE 4001
 
 RUN chown -R node /app
 USER node
