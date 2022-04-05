@@ -1,40 +1,27 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:686349734350:task-definition/backend:5",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:686349734350:task-definition/node-1:1",
     "containerDefinitions": [
         {
-            "name": "psicologia",
-            "image": "686349734350.dkr.ecr.us-east-2.amazonaws.com/psicologia:b52fce40e1f0c696db6640edbc73e10e8553139e",
+            "name": "node-1",
+            "image": "686349734350.dkr.ecr.us-east-2.amazonaws.com/node-1",
             "cpu": 0,
-            "memory": 724,
-            "memoryReservation": 324,
-            "links": [],
+            "memory": 128,
             "portMappings": [
                 {
                     "containerPort": 4000,
-                    "hostPort": 3000,
+                    "hostPort": 4000,
                     "protocol": "tcp"
                 }
             ],
             "essential": true,
-            "entryPoint": [],
-            "command": [],
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
-            "volumesFrom": [],
-            "secrets": [],
-            "dnsServers": [],
-            "dnsSearchDomains": [],
-            "extraHosts": [],
-            "dockerSecurityOptions": [],
-            "dockerLabels": {},
-            "ulimits": [],
-            "systemControls": []
+            "volumesFrom": []
         }
     ],
-    "family": "backend",
+    "family": "node-1",
     "taskRoleArn": "arn:aws:iam::686349734350:role/ecsTaskExecutionRole",
-    "revision": 5,
+    "revision": 1,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -42,33 +29,20 @@
             "name": "com.amazonaws.ecs.capability.ecr-auth"
         },
         {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-        },
-        {
             "name": "com.amazonaws.ecs.capability.task-iam-role"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
         }
     ],
     "placementConstraints": [],
-    "compatibilities": ["EXTERNAL", "EC2"],
-    "requiresCompatibilities": ["EC2"],
+    "compatibilities": [
+        "EXTERNAL",
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
     "cpu": "1024",
     "memory": "1024",
-    "registeredAt": "2022-04-05T03:43:36.123Z",
+    "registeredAt": "2022-04-05T03:58:53.044Z",
     "registeredBy": "arn:aws:iam::686349734350:root",
-    "tags": [
-        {
-            "key": "ecs:taskDefinition:createdFrom",
-            "value": "ecs-console-v2"
-        },
-        {
-            "key": "ecs:taskDefinition:stackId",
-            "value": "arn:aws:cloudformation:us-east-2:686349734350:stack/ECS-Console-V2-TaskDefinition-d87e7046-5abb-42db-8a15-3b84113fd920/8faeb860-b492-11ec-aa27-069c9ccab196"
-        }
-    ]
+    "tags": []
 }
