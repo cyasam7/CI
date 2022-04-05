@@ -9,9 +9,9 @@
       "entryPoint": null,
       "portMappings": [
         {
-          "hostPort": 4000,
+          "hostPort": 4001,
           "protocol": "tcp",
-          "containerPort": 4000
+          "containerPort": 4001
         }
       ],
       "command": null,
@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "686349734350.dkr.ecr.us-east-2.amazonaws.com/node-1",
+      "image": "686349734350.dkr.ecr.us-east-2.amazonaws.com/node-1:09c5fccae828489d9d3353dc01444d5e13a0d491",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:686349734350:task-definition/node-1:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:686349734350:task-definition/node-1:5",
   "family": "node-1",
   "requiresAttributes": [
     {
@@ -79,7 +79,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": "1024",
-  "revision": 1,
+  "revision": 5,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
